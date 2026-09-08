@@ -211,7 +211,7 @@ const OTHERS=[
 ['SatManager','España','Servicio técnico en campo, con avisos con mapa y ruteo, albaranes con firma y facturación. Ionic.'],
 ['Cortex','Producto propio','Asistente personal por WhatsApp con recordatorios, gastos y notas por audio. FastAPI.'],
 ['Academia Thales','Perú','Aula virtual en Moodle y reemplazo de un WordPress comprometido por un sitio estático. Astro.'],
-['The Argentino y Mosto','Canadá / EE.UU.','Dos tiendas de exportación creadas desde cero. Shopify.'],
+['The Argentino y Mosto Wine Store','Canadá / EE.UU.','Dos tiendas de exportación de productos argentinos, creadas desde cero. Shopify.',[['theargentino.com','https://theargentino.com/'],['mostowinestore.com','https://mostowinestore.com/']]],
 ['Tymonyz','Producto propio','Pipeline autónomo que convierte noticias en video, del guion a la voz, la edición y la publicación. Python.'],
 ['Expert Advisor MetaTrader 5','Cliente vía Workana','Robot de trading construido según la especificación del cliente. MQL5.'],
 ['30+ trabajos con reseña pública','Varios países','Bots de WhatsApp, aulas virtuales, tiendas, tableros y frontends. Verificables en Workana.']];
@@ -506,7 +506,7 @@ idx+=`
         ${OTHERS.map(o=>`<div class="glass-card p-6">
           <h4 class="text-lg font-bold mb-1">${esc(o[0])}</h4>
           <p class="text-xs font-mono text-gray-500 mb-3">${esc(o[1])}</p>
-          <p class="text-gray-400 text-sm">${esc(o[2])}</p>
+          <p class="text-gray-400 text-sm">${esc(o[2])}</p>${o[3]?`<p class="otros-links">${o[3].map(l=>`<a href="${l[1]}" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i>${esc(l[0])}</a>`).join('')}</p>`:''}
         </div>`).join('')}
       </div>
     </div>

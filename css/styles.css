@@ -1530,3 +1530,9 @@ section[id] { scroll-margin-top: 92px; }
 }
 .dispo-cv:hover { color: #a7f3d0; text-decoration: underline; }
 .dispo-cv i { font-size: .78rem; }
+
+/* ============ links en las tarjetas de otros trabajos ============ */
+.otros-links { margin-top: .7rem; display: flex; flex-wrap: wrap; gap: .4rem .9rem; }
+.otros-links a { font-size: .8rem; font-weight: 600; color: #6ee7b7; display: inline-flex; align-items: center; gap: .35rem; }
+.otros-links a i { font-size: .7rem; opacity: .8; }
+.otros-links a:hover { color: #a7f3d0; text-decoration: underline; }
