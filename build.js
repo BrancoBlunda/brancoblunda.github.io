@@ -98,11 +98,11 @@ const PROJECTS=[
  shots:[['01-app-escaneo.webp','La cámara detectando la hoja del cuaderno para escanearla.'],['02-app-nuevo-escaneo.webp','El escaneo listo, con el módulo de IA que transcribe el documento, lo resume y resuelve la matemática.'],['03-cloud-destinos.webp','Las integraciones en la nube, con Google Drive, Dropbox, OneNote, OneDrive, correo y Trello.'],['04-cloud-configurado.webp','Cada uno de los seis íconos impresos en la hoja se asocia a un destino. El usuario marca el ícono y el escaneo se guarda solo donde corresponde.'],['05-app-store.webp','La app publicada en la App Store bajo la cuenta del cliente.']],
  nota:''},
 
-{slug:'vertical',title:'Vertical',cliente:'Producto que cofundé',pais:'Argentina',
- rol:'Cofundador · producto y arquitectura',estado:'Activo, con 50+ inmobiliarias',
- tag:'SaaS cofundado · Agentes de IA en WhatsApp',
- tipos:['SaaS cofundado','Agentes de IA','CRM'],
- desc:'Plataforma que cofundé y construí, con agentes conversacionales de IA y CRM para inmobiliarias, sobre la API oficial de WhatsApp. Califica leads, hace seguimiento y reactiva contactos las 24 horas. Verificada por Meta como proveedor de tecnología.',
+{slug:'vertical',title:'Vertical',cliente:'Producto que creé',pais:'Argentina',
+ rol:'Fundador · creé la plataforma completa',estado:'Activo, con 50+ inmobiliarias',
+ tag:'SaaS que creé · Agentes de IA en WhatsApp',
+ tipos:['SaaS propio','Agentes de IA','CRM'],
+ desc:'Plataforma que creé y construí yo solo, con agentes conversacionales de IA y CRM para inmobiliarias, sobre la API oficial de WhatsApp. Califica leads, hace seguimiento y reactiva contactos las 24 horas. Verificada por Meta como proveedor de tecnología.',
  antes:'Las consultas entraban a toda hora y se respondían cuando se podía. El contacto que espera se enfría.',
  despues:'Atención en segundos las 24 horas, con el lead ya calificado y cargado en el CRM.',
  problema:'Una inmobiliaria recibe consultas a toda hora y responde cuando puede. El contacto que no recibe respuesta en minutos se enfría, y después nadie tiene tiempo de reactivarlo.',
@@ -249,7 +249,7 @@ const SHORT={
 'lomas-del-pacifico':'Sistema de cobranza de lotes en cuotas, con planes de pago, recibos con folio, mora y morosidad.',
 'blc-one':'Centraliza 237 plantas de energía renovable y sus compromisos regulatorios.',
 'comanda-central':'Punto de venta, inventario y costeo real de recetas anidadas para gastronomía.',
-'vertical':'SaaS que cofundé. Agentes de IA que atienden WhatsApp las 24 horas, califican al contacto y lo cargan en el CRM.',
+'vertical':'SaaS que creé. Agentes de IA que atienden WhatsApp las 24 horas, califican al contacto y lo cargan en el CRM.',
 'deltan-scan':'Una IA detecta y mide cada pieza dental sobre la radiografía. Segundos en vez de veinte minutos.'};
 const chips=p=>p.tech.split(' · ').slice(0,4);
 
@@ -474,7 +474,7 @@ idx+=`
       <div><strong>4</strong><span>apps publicadas en Google&nbsp;Play y App&nbsp;Store</span></div>
       <div><strong>8.900+</strong><span>usuarios en 177 países en una sola app</span></div>
       <div><strong>50.000</strong><span>llamadas por mes atendidas por un sistema que construí</span></div>
-      <div><strong>Meta</strong><span>verificó como proveedor de tecnología a Vertical, el SaaS que cofundé</span></div>
+      <div><strong>Meta</strong><span>verificó como proveedor de tecnología a Vertical, el SaaS que creé</span></div>
     </div>
     <p class="criterio">Lo difícil no es escribir el código. Es decidir <strong>qué se construye, qué se descarta</strong> y qué va a seguir funcionando dentro de dos años.</p>
   </div>
