@@ -50,7 +50,7 @@ const PROJECTS=[
  'Infraestructura como código y despliegue automatizado sin credenciales estáticas.'],
  stats:[['1.551+','tests automatizados'],['~90%','de cobertura'],['~130','pull requests']],
  tech:'TypeScript · React 19 · Vite · Tailwind · NestJS 11 · PostgreSQL 16 · Prisma · Turborepo · AWS ECS Fargate y Aurora · Terraform · Vercel',
- links:[['Aplicación','https://app.signfloow.ai']],
+ links:[['Sitio','https://signfloow.com'],['Aplicación','https://app.signfloow.ai']],
  cover:'01-floow-kanban.webp',
  shots:[['01-floow-kanban.webp','El tablero de producción, con cinco fases, una tarjeta por proyecto y el avance de cada tarea.'],['02-panel.webp','El panel de inicio, con los proyectos por fase, las prioridades del día y los presupuestos pendientes de enviar.'],['03-quote-engine.webp','Detalle de un presupuesto, con sus líneas, los impuestos y el análisis interno de costes y margen.'],['08-detalle-proyecto.webp','Ficha de proyecto, con las tareas de producción, los archivos, las notas internas y un resumen generado por IA.'],['06-catalogo.webp','El catálogo, con familias, subfamilias y productos que heredan materiales y reglas. Cada producto puede ser de precio fijo o calculable.'],['04-crm-pipeline.webp','El embudo comercial, desde la consulta nueva hasta el cobro pendiente.'],['05-presupuestos-lista.webp','El listado de presupuestos, con el estado y el margen de cada uno.'],['07-floowy-chat.webp','Floowy, el asistente de IA, que propone acciones concretas sobre los datos del taller.']],
  nota:''},
@@ -93,29 +93,29 @@ const PROJECTS=[
  'Publicación en Google Play y App Store bajo cuentas del cliente, incluida la transferencia de la ficha de iOS.'],
  stats:[['8.900+','usuarios registrados'],['177','países'],['0','registros perdidos en la migración']],
  tech:'Flutter / Dart · Kotlin con OpenCV y ML Kit · ASP.NET Core · SQL Server · Azure Document Intelligence · OpenAI · DigitalOcean · Docker · Codemagic',
- links:[['Google Play','https://play.google.com/store/apps/details?id=com.infinitybook.infinitybook']],
+ links:[['Sitio','https://myinfinitybook.com'],['Google Play','https://play.google.com/store/apps/details?id=com.infinitybook.infinitybook']],
  cover:'05-app-store.webp',
  shots:[['01-app-escaneo.webp','La cámara detectando la hoja del cuaderno para escanearla.'],['02-app-nuevo-escaneo.webp','El escaneo listo, con el módulo de IA que transcribe el documento, lo resume y resuelve la matemática.'],['03-cloud-destinos.webp','Las integraciones en la nube, con Google Drive, Dropbox, OneNote, OneDrive, correo y Trello.'],['04-cloud-configurado.webp','Cada uno de los seis íconos impresos en la hoja se asocia a un destino. El usuario marca el ícono y el escaneo se guarda solo donde corresponde.'],['05-app-store.webp','La app publicada en la App Store bajo la cuenta del cliente.']],
  nota:''},
 
-{slug:'vertical',title:'Vertical',cliente:'Producto propio',pais:'Argentina',
- rol:'Fundador · producto, arquitectura y operación',estado:'Activo, con clientes',
- tag:'SaaS propio · Agentes de IA en WhatsApp',
- tipos:['SaaS propio','Agentes de IA','CRM'],
- desc:'Mi propia plataforma, con agentes conversacionales de IA y CRM para inmobiliarias, sobre la API oficial de WhatsApp. Califica leads, hace seguimiento y reactiva contactos las 24 horas. Proveedor de tecnología verificado por Meta.',
+{slug:'vertical',title:'Vertical',cliente:'Producto que cofundé',pais:'Argentina',
+ rol:'Cofundador · producto y arquitectura',estado:'Activo, con 50+ inmobiliarias',
+ tag:'SaaS cofundado · Agentes de IA en WhatsApp',
+ tipos:['SaaS cofundado','Agentes de IA','CRM'],
+ desc:'Plataforma que cofundé y construí, con agentes conversacionales de IA y CRM para inmobiliarias, sobre la API oficial de WhatsApp. Califica leads, hace seguimiento y reactiva contactos las 24 horas. Verificada por Meta como proveedor de tecnología.',
  antes:'Las consultas entraban a toda hora y se respondían cuando se podía. El contacto que espera se enfría.',
  despues:'Atención en segundos las 24 horas, con el lead ya calificado y cargado en el CRM.',
  problema:'Una inmobiliaria recibe consultas a toda hora y responde cuando puede. El contacto que no recibe respuesta en minutos se enfría, y después nadie tiene tiempo de reactivarlo.',
  construido:['Agente conversacional que califica al contacto durante la charla, sobre la API oficial de WhatsApp.',
- 'CRM propio donde queda el historial y el estado de cada contacto.',
+ 'CRM propio de la plataforma, donde queda el historial y el estado de cada contacto.',
  'Seguimiento y reactivación automáticos.',
  'Configuración del comportamiento del agente por cliente.',
- 'Infraestructura y operación diaria de la plataforma.'],
+ 'Infraestructura de la plataforma.'],
  stats:[['Meta','proveedor de tecnología verificado'],['24/7','atención']],
  tech:'Meta WhatsApp Cloud API · modelos de lenguaje con uso de herramientas · Python',
  links:[['Sitio','https://somosvertical.ar']],
  cover:'03-etapas-crm.webp',
- shots:[['02-bandeja-chat.webp','La bandeja, donde el agente conversa por WhatsApp y va dejando arriba lo que averiguó — intención, presupuesto, zona y, si se cae, el motivo.'],['03-etapas-crm.webp','El CRM por etapas, de lead frío a cerrado. Cada contacto se mueve solo según cómo va la conversación.'],['04-ficha-contacto.webp','La ficha del contacto, con lo que contó, cuántas veces se lo siguió, cómo terminó y la nota del vendedor.'],['05-seguimiento.webp','El seguimiento automático, a las 20 horas, al día 3 y al día 6, con plantillas aprobadas por WhatsApp. Si contesta, se corta solo.'],['06-reactivacion.webp','La reactivación de contactos viejos, con tope diario y baja automática. Si WhatsApp baja la calidad del número, se frena sola.'],['07-meta-verificado.webp','El estado en Meta, con el negocio verificado y la verificación de acceso como proveedor de tecnología (Tech Provider), que es lo que habilita a operar sobre las cuentas de WhatsApp de otras empresas.'],['01-web-home.webp','El sitio de Vertical.']],
+ shots:[['02-bandeja-chat.webp','La bandeja, donde el agente conversa por WhatsApp y va dejando arriba lo que averiguó — intención, presupuesto, zona y, si se cae, el motivo.'],['03-etapas-crm.webp','El CRM por etapas, de lead frío a cerrado. Cada contacto se mueve solo según cómo va la conversación.'],['04-ficha-contacto.webp','La ficha del contacto, con lo que contó, cuántas veces se lo siguió, cómo terminó y la nota del vendedor.'],['05-seguimiento.webp','El seguimiento automático, a las 20 horas, al día 3 y al día 6, con plantillas aprobadas por WhatsApp. Si contesta, se corta solo.'],['06-reactivacion.webp','La reactivación de contactos viejos, con tope diario y baja automática. Si WhatsApp baja la calidad del número, se frena sola.'],['07-meta-verificado.webp','El estado en Meta, con el negocio verificado y la verificación de acceso como proveedor de tecnología (Tech Provider), que es lo que habilitaba a operar sobre las cuentas de WhatsApp de otras empresas.'],['01-web-home.webp','El sitio de Vertical.']],
  nota:''},
 
 {slug:'deltan-scan',title:'Deltan Scan IA',cliente:'Clínica odontológica',pais:'Latinoamérica',
@@ -249,7 +249,7 @@ const SHORT={
 'lomas-del-pacifico':'Sistema de cobranza de lotes en cuotas, con planes de pago, recibos con folio, mora y morosidad.',
 'blc-one':'Centraliza 237 plantas de energía renovable y sus compromisos regulatorios.',
 'comanda-central':'Punto de venta, inventario y costeo real de recetas anidadas para gastronomía.',
-'vertical':'Mi SaaS. Agentes de IA que atienden WhatsApp las 24 horas, califican al contacto y lo cargan en el CRM.',
+'vertical':'SaaS que cofundé. Agentes de IA que atienden WhatsApp las 24 horas, califican al contacto y lo cargan en el CRM.',
 'deltan-scan':'Una IA detecta y mide cada pieza dental sobre la radiografía. Segundos en vez de veinte minutos.'};
 const chips=p=>p.tech.split(' · ').slice(0,4);
 
@@ -408,7 +408,8 @@ const LD_HOME={'@context':'https://schema.org','@graph':[
 {'@type':'Person','@id':SITE+'/#branco','name':'Branco Blunda','jobTitle':'Software Engineer',
  'url':SITE+'/','image':SITE+'/assets/images/foto.webp','email':'mailto:'+MAIL,'telephone':'+5493417824155',
  'address':{'@type':'PostalAddress','addressLocality':'Rosario','addressRegion':'Santa Fe','addressCountry':'AR'},
- 'sameAs':[GITHUB,LINKEDIN,WORKANA,'https://somosvertical.ar'],
+ 'sameAs':[GITHUB,LINKEDIN,WORKANA],
+ 'worksFor':{'@type':'Organization','name':'RedChat','url':'https://redchat.com.ar'},
  'knowsAbout':['Inteligencia artificial','Agentes conversacionales','WhatsApp Business API','SaaS multi-tenant','Node.js','Python','TypeScript','React','Next.js','NestJS','Flutter','PostgreSQL','AWS','Terraform'],
  'knowsLanguage':['es','en']},
 {'@type':'WebSite','@id':SITE+'/#web','url':SITE+'/','name':'Branco Blunda — Software Engineer',
@@ -442,7 +443,7 @@ idx+=`
           bajar costos, automatizar procesos y meterle <span class="text-blue-400 font-semibold">IA</span> a lo que hoy hacen a mano.
         </p>
         <p class="text-gray-400 mb-4 max-w-2xl">Agentes de voz y de WhatsApp, SaaS multi-empresa y apps publicadas. Todo en producción, usado por gente real.</p>
-        <p class="text-gray-500 mb-8 max-w-2xl">Desarrollo software desde 2017. Rosario, Argentina · Trabajo remoto.</p>
+        <p class="text-gray-500 mb-8 max-w-2xl">Hoy soy Software Engineer en RedChat, una plataforma de IA para ecommerce. Desarrollo software desde 2017 · Rosario, Argentina · Trabajo remoto.</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
           <a href="#portafolio" class="btn-primary"><i class="fas fa-folder-open mr-2"></i>Ver lo que construí</a>
           <a href="${WA}?text=Hola%20Branco,%20te%20escribo%20por%20un%20proyecto" target="_blank" rel="noopener" class="btn-secondary"><i class="fab fa-whatsapp mr-2"></i>Contame tu proyecto</a>
@@ -473,7 +474,7 @@ idx+=`
       <div><strong>4</strong><span>apps publicadas en Google&nbsp;Play y App&nbsp;Store</span></div>
       <div><strong>8.900+</strong><span>usuarios en 177 países en una sola app</span></div>
       <div><strong>50.000</strong><span>llamadas por mes atendidas por un sistema que construí</span></div>
-      <div><strong>Meta</strong><span>proveedor de tecnología verificado</span></div>
+      <div><strong>Meta</strong><span>verificó como proveedor de tecnología a Vertical, el SaaS que cofundé</span></div>
     </div>
     <p class="criterio">Lo difícil no es escribir el código. Es decidir <strong>qué se construye, qué se descarta</strong> y qué va a seguir funcionando dentro de dos años.</p>
   </div>
@@ -517,7 +518,7 @@ idx+=`
   <div class="container mx-auto">
     <div class="text-center mb-16">
       <h2 class="section-title">En qué te puedo ayudar</h2>
-      <p class="text-gray-400 text-lg max-w-2xl mx-auto">Tres cosas, y las tres las tengo funcionando hoy para clientes que pagan.</p>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto">Tres cosas, y las tres las construí y están en producción para clientes que pagan.</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       ${SERVICIOS.map(s=>`<div class="service-card">
