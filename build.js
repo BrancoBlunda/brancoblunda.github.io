@@ -3,7 +3,7 @@ const fs = require('fs'), path = require('path'), crypto = require('crypto');
 /* huella corta del archivo: al cambiar, el navegador deja de servir la version vieja */
 const v=f=>{try{return crypto.createHash('md5').update(fs.readFileSync(f)).digest('hex').slice(0,8);}catch(e){return Date.now().toString(36);}};
 const VCSS=v('css/styles.css'), VJS=v('js/main.js');
-const SITE='https://brancoblunda.github.io';
+const SITE='https://brancoblunda.com';
 const MAIL='brancoadrianblunda@gmail.com';
 const LINKEDIN='https://linkedin.com/in/brancoblunda';
 const GITHUB='https://github.com/BrancoBlunda';
@@ -638,7 +638,7 @@ idx+=`
         <h3 class="text-2xl font-bold mb-2">Contame tu proyecto</h3>
         <p class="text-gray-400 mb-6 text-sm">Cuatro datos y listo. Te respondo el mismo día con una propuesta concreta, sin compromiso.</p>
         <form class="form-contacto" action="https://formsubmit.co/${MAIL}" method="POST">
-          <input type="hidden" name="_subject" value="Nueva consulta desde brancoblunda.github.io">
+          <input type="hidden" name="_subject" value="Nueva consulta desde brancoblunda.com">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_next" value="${SITE}/gracias.html">

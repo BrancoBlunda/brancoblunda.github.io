@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://brancoblunda.github.io/sitemap.xml
+Sitemap: https://brancoblunda.com/sitemap.xml

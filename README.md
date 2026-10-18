@@ -1,8 +1,8 @@
 # Portafolio de Branco Blunda
 
-Código de mi portafolio de casos, publicado en **https://brancoblunda.github.io**
+Código de mi portafolio de casos, publicado en **https://brancoblunda.com**
 
-![Portafolio](https://brancoblunda.github.io/assets/proyectos/deltan-scan/03-resultados.webp)
+![Portafolio](https://brancoblunda.com/assets/proyectos/deltan-scan/03-resultados.webp)
 
 Cada caso cuenta un sistema con IA que construí y está o estuvo en producción, con capturas y links vivos. Taxi AI, SignFloow, BLC One, Infinity Book, Vertical y otros.
 
