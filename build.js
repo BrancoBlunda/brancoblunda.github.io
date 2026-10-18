@@ -484,7 +484,7 @@ idx+=`
   <div class="container mx-auto">
     <div class="text-center mb-16">
       <h2 class="section-title">Trabajo</h2>
-      <p class="text-gray-400 text-lg max-w-2xl mx-auto">Nueve de más de cincuenta, con capturas del sistema real. La mayoría sigue en producción.</p>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto">Una selección de los más de 50 proyectos que entregué, con capturas de cada sistema funcionando.</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8">
       ${PROJECTS.map(p=>`<div class="project-card">
