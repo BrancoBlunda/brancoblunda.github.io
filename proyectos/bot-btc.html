@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es-AR" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BTC Trader — Producto propio | Branco Blunda</title>
+<meta name="description" content="Un bot que analiza el mercado de Bitcoin las 24 horas, detecta señales con varios indicadores a la vez y opera con gestión de riesgo automática, mientras u">
+<meta name="author" content="Branco Blunda">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#111827">
+<link rel="canonical" href="https://brancoblunda.github.io/proyectos/bot-btc.html">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="256x256" href="../favicon.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Branco Blunda">
+<meta property="og:locale" content="es_AR">
+<meta property="og:url" content="https://brancoblunda.github.io/proyectos/bot-btc.html">
+<meta property="og:title" content="BTC Trader — Producto propio | Branco Blunda">
+<meta property="og:description" content="Un bot que analiza el mercado de Bitcoin las 24 horas, detecta señales con varios indicadores a la vez y opera con gestión de riesgo automática, mientras u">
+<meta property="og:image" content="https://brancoblunda.github.io/assets/images/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BTC Trader — Producto propio | Branco Blunda">
+<meta name="twitter:description" content="Un bot que analiza el mercado de Bitcoin las 24 horas, detecta señales con varios indicadores a la vez y opera con gestión de riesgo automática, mientras u">
+<meta name="twitter:image" content="https://brancoblunda.github.io/assets/images/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css?v=b58f2bb1">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CreativeWork","@id":"https://brancoblunda.github.io/proyectos/bot-btc.html#caso","name":"BTC Trader","url":"https://brancoblunda.github.io/proyectos/bot-btc.html","description":"Un bot que analiza el mercado de Bitcoin las 24 horas, detecta señales con varios indicadores a la vez y opera con gestión de riesgo automática, mientras un panel web muestra en vivo qué está viendo y por qué decide.","image":"https://brancoblunda.github.io/assets/proyectos/bot-btc/01-monitor.png","creator":{"@type":"Person","name":"Branco Blunda","url":"https://brancoblunda.github.io/"},"about":["Python","asyncio","FastAPI","Pandas","NumPy","CCXT","SQLite","Telegram Bot API"],"inLanguage":"es-AR"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://brancoblunda.github.io/"},{"@type":"ListItem","position":2,"name":"Proyectos","item":"https://brancoblunda.github.io/#portafolio"},{"@type":"ListItem","position":3,"name":"BTC Trader","item":"https://brancoblunda.github.io/proyectos/bot-btc.html"}]}]}</script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+<a class="skip" href="#main">Ir al contenido</a>
+
+<nav class="fixed top-0 w-full bg-gray-900 bg-opacity-95 backdrop-blur-md z-50 border-b border-gray-800">
+  <div class="container mx-auto px-6 py-4">
+    <div class="flex justify-between items-center">
+      <a href="../index.html" class="brand" aria-label="Branco Blunda — inicio">
+        <img src="../assets/images/logo-dark.svg" alt="Branco Blunda" class="brand-logo" width="178" height="225">
+      </a>
+      <div class="hidden md:flex space-x-8">
+        <a href="../index.html#portafolio" class="nav-link">Proyectos</a>
+        <a href="../index.html#servicios" class="nav-link">Qué hago</a>
+        <a href="../index.html#opiniones" class="nav-link">Opiniones</a>
+        <a href="../index.html#contacto" class="nav-link nav-cta">Contame tu proyecto</a>
+      </div>
+      <button id="menu-toggle" class="md:hidden text-2xl focus:outline-none" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu"><i class="fas fa-bars"></i></button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-4">
+      <a href="../index.html#portafolio" class="block nav-link-mobile">Proyectos</a>
+      <a href="../index.html#servicios" class="block nav-link-mobile">Qué hago</a>
+      <a href="../index.html#opiniones" class="block nav-link-mobile">Opiniones</a>
+      <a href="../index.html#contacto" class="block nav-link-mobile">Contame tu proyecto</a>
+    </div>
+  </div>
+</nav>
+<main id="main">
+<section class="case-hero px-6">
+  <div class="container mx-auto max-w-5xl">
+    <a href="../index.html#portafolio" class="volver"><i class="fas fa-arrow-left mr-2"></i>Todos los proyectos</a>
+    <span class="case-tag">Trading algorítmico · Python asíncrono</span>
+    <h1 class="case-title"><span class="gradient-text">BTC Trader</span></h1>
+    <p class="case-lede">Un bot que analiza el mercado de Bitcoin las 24 horas, detecta señales con varios indicadores a la vez y opera con gestión de riesgo automática, mientras un panel web muestra en vivo qué está viendo y por qué decide.</p>
+    <ul class="case-meta">
+      <li><span>Cliente</span><b>Producto propio</b></li>
+      <li><span>País</span><b>Argentina</b></li>
+      <li><span>Rol</span><b>Diseño y construcción</b></li>
+      <li><span>Estado</span><b>Código abierto</b></li>
+    </ul>
+    
+  </div>
+</section>
+
+<section class="px-6 pb-6">
+  <div class="container mx-auto max-w-6xl">
+    <div class="carousel" data-carousel aria-roledescription="carrusel" aria-label="Capturas de BTC Trader">
+      <div class="carousel-stage">
+        <figure class="carousel-slide is-active" data-i="0">
+          <img src="../assets/proyectos/bot-btc/01-monitor.png" alt="El panel de monitoreo en tiempo real, escaneando el mercado y mostrando el estado de cada indicador." class="" width="1920" height="1020" loading="lazy" decoding="async" data-zoom="1" data-file="assets/proyectos/bot-btc/01-monitor.png" onerror="this.parentElement.classList.add('img-missing');this.parentElement.setAttribute('data-missing',this.dataset.file);this.remove()">
+        </figure><figure class="carousel-slide" data-i="1">
+          <img src="../assets/proyectos/bot-btc/02-senal.png" alt="Una señal de compra confirmada, con los factores que coincidieron para habilitar la entrada." class="" width="1920" height="1020" loading="lazy" decoding="async" data-zoom="1" data-file="assets/proyectos/bot-btc/02-senal.png" onerror="this.parentElement.classList.add('img-missing');this.parentElement.setAttribute('data-missing',this.dataset.file);this.remove()">
+        </figure><figure class="carousel-slide" data-i="2">
+          <img src="../assets/proyectos/bot-btc/03-estadisticas.png" alt="Estadísticas adicionales del bot y de las operaciones." class="" width="1920" height="1020" loading="lazy" decoding="async" data-zoom="1" data-file="assets/proyectos/bot-btc/03-estadisticas.png" onerror="this.parentElement.classList.add('img-missing');this.parentElement.setAttribute('data-missing',this.dataset.file);this.remove()">
+        </figure>
+        <button class="carousel-btn prev" type="button" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel-btn next" type="button" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
+        <span class="carousel-count"><b>1</b> / 3</span>
+      </div>
+      <div class="carousel-caption">
+        <p class="carousel-cap is-active" data-i="0">El panel de monitoreo en tiempo real, escaneando el mercado y mostrando el estado de cada indicador.</p><p class="carousel-cap" data-i="1">Una señal de compra confirmada, con los factores que coincidieron para habilitar la entrada.</p><p class="carousel-cap" data-i="2">Estadísticas adicionales del bot y de las operaciones.</p>
+      </div>
+      <div class="carousel-dots" role="tablist"></div>
+    </div>
+    <p class="carousel-hint"><i class="fas fa-search-plus"></i> Tocá una captura para verla grande</p>
+  </div>
+</section>
+
+<section class="py-12 px-6">
+  <div class="container mx-auto max-w-5xl">
+    <div class="case-split">
+      <div>
+        <h2 class="case-h2 text-green-400">El problema</h2>
+        <p class="case-p">Operar cripto a mano obliga a estar mirando gráficos todo el día y a decidir con información parcial. Quería un sistema que vigilara el mercado sin pausa, exigiera confirmación de varios indicadores antes de entrar y cuidara el capital en cada operación.</p>
+        <div class="ba">
+          <div class="ba-antes"><span>Antes</span><p>Seguir el mercado a mano, mirando gráficos y decidiendo con un solo indicador.</p></div>
+          <div class="ba-flecha"><i class="fas fa-arrow-right"></i></div>
+          <div class="ba-despues"><span>Después</span><p>Un sistema que vigila, confirma señales con varios factores y opera solo, con stop loss y take profit calculados en cada entrada.</p></div>
+        </div>
+      </div>
+      <div>
+        <h2 class="case-h2 text-blue-400">Lo que construí</h2>
+        <ul class="case-list one"><li>Estrategia de seguimiento de tendencia que solo entra cuando coinciden RSI, MACD, la EMA de 200 como filtro de régimen de mercado y anomalías de volumen.</li><li>Stop loss y take profit dinámicos, calculados en cada operación.</li><li>Núcleo asíncrono con asyncio, donde la lógica de trading y el servidor web corren a la vez sin bloquearse.</li><li>Persistencia en SQLite para recuperar las posiciones abiertas después de cualquier reinicio.</li><li class="more" hidden>API con FastAPI y un panel web que muestra en vivo el escaneo, las señales detectadas y las estadísticas.</li><li class="more" hidden>Conexión a Binance mediante CCXT, avisos por Telegram y modo de simulación que funciona sin claves.</li></ul>
+        <button class="ver-mas" type="button" data-more>Ver los 6 puntos <i class="fas fa-chevron-down"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-12 px-6 bg-gray-800 bg-opacity-50">
+  <div class="container mx-auto max-w-5xl">
+    <div class="case-tail">
+      <div>
+        <h2 class="case-h2 mb-5">Con qué está hecho</h2>
+        <div class="flex flex-wrap gap-2"><span class="tech-badge sm c-lang">Python</span><span class="tech-badge sm">asyncio</span><span class="tech-badge sm c-back">FastAPI</span><span class="tech-badge sm">Pandas</span><span class="tech-badge sm">NumPy</span><span class="tech-badge sm">CCXT</span><span class="tech-badge sm c-data">SQLite</span><span class="tech-badge sm">Telegram Bot API</span></div>
+      </div>
+      <aside class="live-card">
+        <h2 class="case-h2 mb-4">Verlo en vivo</h2>
+        <div class="live-links"><div class="live-par"><a href="https://github.com/BrancoBlunda/Bot_BTC" target="_blank" rel="noopener" class="live-btn"><i class="fas fa-external-link-alt"></i>Código</a><a href="https://web.archive.org/web/2026/https://github.com/BrancoBlunda/Bot_BTC" target="_blank" rel="noopener" class="live-copia" title="Copia guardada en la Wayback Machine"><i class="fas fa-box-archive"></i>copia</a></div></div>
+        <p class="case-nota">Si un link deja de abrir, la copia archivada muestra cómo estaba el sistema.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="py-20 px-6 text-center">
+  <div class="container mx-auto max-w-3xl">
+    <h2 class="text-3xl font-bold mb-4">¿Tenés algo parecido entre manos?</h2>
+    <p class="text-gray-400 mb-8">Contame el problema y lo charlamos.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="https://wa.me/5493417824155?text=Hola%20Branco,%20vi%20el%20caso%20de%20BTC%20Trader" target="_blank" rel="noopener" class="btn-primary"><i class="fab fa-whatsapp mr-2"></i>Escribime</a>
+      <a href="../index.html#portafolio" class="btn-secondary"><i class="fas fa-arrow-left mr-2"></i>Ver otros proyectos</a>
+    </div>
+  </div>
+</section>
+</main>
+<div class="read-progress" id="read-progress"></div>
+<footer class="py-12 px-6 bg-gray-800 bg-opacity-50 border-t border-gray-800">
+  <div class="container mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="text-center md:text-left">
+        <div class="flex items-center justify-center md:justify-start gap-3 mb-2">
+          <img src="../assets/images/logo-dark.svg" alt="" class="brand-logo" width="178" height="225">
+          <span class="text-lg font-bold">Branco Blunda</span>
+        </div>
+        <p class="text-gray-500 text-sm">Software Engineer · Rosario, Argentina</p>
+      </div>
+      <div class="flex gap-6">
+        <a href="https://github.com/BrancoBlunda" target="_blank" rel="noopener noreferrer" class="social-icon-footer" aria-label="GitHub"><i class="fab fa-github text-xl"></i></a>
+        <a href="https://linkedin.com/in/brancoblunda" target="_blank" rel="noopener noreferrer" class="social-icon-footer" aria-label="LinkedIn"><i class="fab fa-linkedin text-xl"></i></a>
+        <a href="https://www.workana.com/freelancer/a47899bad3b852d35ff4ca118b9b2d45" target="_blank" rel="noopener noreferrer" class="social-icon-footer" aria-label="Workana"><i class="fas fa-briefcase text-xl"></i></a>
+        <a href="https://wa.me/5493417824155" target="_blank" rel="noopener noreferrer" class="social-icon-footer" aria-label="WhatsApp"><i class="fab fa-whatsapp text-xl"></i></a>
+        <a href="mailto:brancoadrianblunda@gmail.com" class="social-icon-footer" aria-label="Email"><i class="fas fa-envelope text-xl"></i></a>
+      </div>
+      <div class="text-center md:text-right">
+        <p class="text-gray-500 text-sm">© <span id="current-year">2026</span> Branco Blunda</p>
+        <p class="text-gray-600 text-xs mt-1">Hecho con <i class="fas fa-heart text-red-500"></i> y mucho código</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/5493417824155?text=Hola%20Branco,%20te%20escribo%20por%20un%20proyecto" target="_blank" rel="noopener" aria-label="Escribime por WhatsApp">
+  <i class="fab fa-whatsapp"></i><span>Escribime</span>
+</a>
+<button id="scroll-top" class="scroll-top-btn" aria-label="Volver arriba"><i class="fas fa-arrow-up"></i></button>
+<script src="../js/main.js?v=b8d4cdcf"></script>
+</body>
+</html>

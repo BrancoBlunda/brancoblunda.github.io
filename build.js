@@ -183,30 +183,30 @@ const PROJECTS=[
  shots:[['01-dashboard.webp','El tablero del sistema, con clientes, lotes por estado, cuotas vencidas y accesos rápidos a las operaciones del día.'],['02-plan-de-pagos.webp','Un plan de pago con sus doce cuotas generadas automáticamente, cada una con su vencimiento, su interés y su aviso por WhatsApp.'],['03-recibo-pdf.webp','El recibo con folio único que emite el sistema, con el número de cuota sobre el total del plan.'],['05-lote-detalle.webp','La ficha de un lote, con el socio propietario, el estado, el cliente asignado y sus planes de pago debajo.']],
  nota:'Sistema privado del cliente. Las capturas se toman sobre datos de prueba.'},
 
-{slug:'tu-proximo-horizonte',title:'Tu Próximo Horizonte',cliente:'Leo Cerdeira',pais:'Argentina',
- rol:'Diseño, construcción y entrega',estado:'Tres sistemas en producción · uso diario',
- tag:'Next.js · Supabase · Automatización',
- tipos:['3 sistemas','Automatización','Sin código para el cliente'],
- desc:'Tres sistemas para una agencia de viajes, que el cliente opera solo. La agenda de capacitaciones semanales, la automatización de leads de Facebook y un onboarding de afiliados editable sin tocar código.',
- antes:'Coordinaba capacitaciones a mano, perdía los leads de Facebook y mandaba siete PDFs sueltos a cada afiliado.',
- despues:'Tres sistemas que el cliente opera solo, sin depender del desarrollador para cambiar nada.',
- problema:'Coordinaba capacitaciones semanales a mano, perdía los leads que entraban por Facebook y mandaba siete PDFs sueltos a cada afiliado nuevo. Necesitaba poder cambiar todo él, sin depender del desarrollador.',
- construido:['Agenda con panel para cargar la semana completa, inscripción pública, manejo estricto de zonas horarias y backups diarios con alarma de fallo.',
- 'Duplicado de semana con borrado definitivo para sesiones vacías y borrado lógico para las que ya tienen inscriptos.',
- 'Seguridad a nivel de fila en la base y revocación del acceso anónimo a los enlaces y claves de reunión.',
- 'Captura automática de leads de Facebook y secuencia de cuatro correos a las 0, 24, 48 y 72 horas, con dominio de envío propio autenticado.',
- 'Onboarding público paso a paso, sin registro, que refleja al instante lo que el administrador cambia.',
- 'Panel de administración con sesión firmada y escrituras por lote a prueba de pérdida de datos.',
- 'Sitio mellizo de demostración en un esquema separado, con aislamiento verificado.'],
- stats:[['3','sistemas en producción'],['0','dependencia del dev para editar']],
- tech:'Next.js 15 · TypeScript · Supabase · Vercel · Make.com · Brevo · Facebook Lead Ads · GitHub Actions',
- links:[],
- cover:'01-onboarding-inicio.webp',
- shots:[['01-onboarding-inicio.webp','El onboarding de afiliados, con el plan de siete pasos, el paso en curso con su video y la agenda de capacitaciones al costado. Un solo link, sin registro.'],['02-onboarding-paso.webp','Un paso abierto, con video, PDFs descargables y enlaces a herramientas. El cliente edita todo esto desde su panel, sin tocar código.'],['06-agenda-publica.webp','La agenda semanal de capacitaciones, con inscripción abierta. El selector de zona horaria convierte los horarios al país de cada inscripto.'],['08-make-escenario.webp','La automatización que captura los leads de Facebook y dispara la secuencia de cuatro correos.']],
- nota:'El dominio del cliente ya no está activo, así que los tres sistemas no se pueden visitar en vivo. Las capturas son del sistema funcionando en producción.'}
+{slug:'bot-btc',title:'BTC Trader',cliente:'Producto propio',pais:'Argentina',
+ rol:'Diseño y construcción',estado:'Código abierto',
+ tag:'Trading algorítmico · Python asíncrono',
+ tipos:['Trading algorítmico','Tiempo real','Código abierto'],
+ desc:'Un bot que analiza el mercado de Bitcoin las 24 horas, detecta señales con varios indicadores a la vez y opera con gestión de riesgo automática, mientras un panel web muestra en vivo qué está viendo y por qué decide.',
+ antes:'Seguir el mercado a mano, mirando gráficos y decidiendo con un solo indicador.',
+ despues:'Un sistema que vigila, confirma señales con varios factores y opera solo, con stop loss y take profit calculados en cada entrada.',
+ problema:'Operar cripto a mano obliga a estar mirando gráficos todo el día y a decidir con información parcial. Quería un sistema que vigilara el mercado sin pausa, exigiera confirmación de varios indicadores antes de entrar y cuidara el capital en cada operación.',
+ construido:['Estrategia de seguimiento de tendencia que solo entra cuando coinciden RSI, MACD, la EMA de 200 como filtro de régimen de mercado y anomalías de volumen.',
+ 'Stop loss y take profit dinámicos, calculados en cada operación.',
+ 'Núcleo asíncrono con asyncio, donde la lógica de trading y el servidor web corren a la vez sin bloquearse.',
+ 'Persistencia en SQLite para recuperar las posiciones abiertas después de cualquier reinicio.',
+ 'API con FastAPI y un panel web que muestra en vivo el escaneo, las señales detectadas y las estadísticas.',
+ 'Conexión a Binance mediante CCXT, avisos por Telegram y modo de simulación que funciona sin claves.'],
+ stats:[],
+ tech:'Python · asyncio · FastAPI · Pandas · NumPy · CCXT · SQLite · Telegram Bot API',
+ links:[['Código','https://github.com/BrancoBlunda/Bot_BTC']],
+ cover:'01-monitor.png',
+ shots:[['01-monitor.png','El panel de monitoreo en tiempo real, escaneando el mercado y mostrando el estado de cada indicador.'],['02-senal.png','Una señal de compra confirmada, con los factores que coincidieron para habilitar la entrada.'],['03-estadisticas.png','Estadísticas adicionales del bot y de las operaciones.']],
+ nota:''}
 ];
 
 const OTHERS=[
+['Tu Próximo Horizonte','Argentina','Tres sistemas para una agencia de viajes que el cliente opera solo, con agenda de capacitaciones, automatización de leads de Facebook y onboarding de afiliados. Next.js y Supabase.'],
 ['Luseo','EE.UU. / Colombia','Colaboración dentro del equipo del cliente sobre módulos de gestión de proyectos en Angular.'],
 ['SatManager','España','Servicio técnico en campo, con avisos con mapa y ruteo, albaranes con firma y facturación. Ionic.'],
 ['Cortex','Producto propio','Asistente personal por WhatsApp con recordatorios, gastos y notas por audio. FastAPI.'],
@@ -243,7 +243,7 @@ const TESTIMONIOS=[
 
 const SHORT={
 'taxi-ai':'Una IA atiende la llamada, entiende la dirección hablada y despacha el taxi. Sin operador humano.',
-'tu-proximo-horizonte':'Tres sistemas en producción que el cliente opera solo. Agenda, captación de leads y onboarding.',
+'bot-btc':'Bot de trading de Bitcoin que confirma señales con varios indicadores y opera solo con gestión de riesgo, con panel en tiempo real.',
 'infinity-book':'App de escaneo con OCR e IA en 177 países. Rescaté el producto y publiqué la versión que está hoy en las tiendas.',
 'signfloow':'SaaS multi-empresa con asistente de IA que consulta los datos reales del taller. 1.551 tests, en AWS.',
 'lomas-del-pacifico':'Sistema de cobranza de lotes en cuotas, con planes de pago, recibos con folio, mora y morosidad.',
@@ -484,7 +484,7 @@ idx+=`
   <div class="container mx-auto">
     <div class="text-center mb-16">
       <h2 class="section-title">Trabajo</h2>
-      <p class="text-gray-400 text-lg max-w-2xl mx-auto">Nueve de más de cincuenta. Todos en producción, con capturas del sistema real.</p>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto">Nueve de más de cincuenta, con capturas del sistema real. La mayoría sigue en producción.</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8">
       ${PROJECTS.map(p=>`<div class="project-card">

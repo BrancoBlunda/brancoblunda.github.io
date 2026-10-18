@@ -4,8 +4,7 @@ const fs=require('fs'),path=require('path');
 const ORIGEN='C:\\Users\\branc\\Escritorio\\Trabajos\\_Capturas';
 const MAPA={
  'taxi-ai':'01-Taxi-AI','signfloow':'02-SignFloow','blc-one':'03-BLC-One',
- 'infinity-book':'04-Infinity-Book','tu-proximo-horizonte':'06-Tu-Proximo-Horizonte',
- 'comanda-central':'09-Comanda-Central','vertical':'10-Vertical','deltan-scan':'12-Deltan-Scan-IA'};
+ 'infinity-book':'04-Infinity-Book','comanda-central':'09-Comanda-Central','vertical':'10-Vertical','deltan-scan':'12-Deltan-Scan-IA'};
 let n=0,faltan=[];
 for(const [slug,carpeta] of Object.entries(MAPA)){
   const src=path.join(ORIGEN,carpeta), dst=path.join('assets','proyectos',slug);
