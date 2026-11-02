@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taxi AI — Taxi Call Group S.A.S. | Branco Blunda</title>
+<meta name="description" content="A taxi company was dispatching tens of thousands of calls a month by hand. I built the AI that answers the phone, understands the passenger's spoken addr">
+<meta name="author" content="Branco Blunda">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#111827">
+<link rel="canonical" href="https://brancoblunda.com/en/proyectos/taxi-ai.html">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+<link rel="icon" type="image/png" sizes="256x256" href="../../favicon.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Branco Blunda">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://brancoblunda.com/en/proyectos/taxi-ai.html">
+<meta property="og:title" content="Taxi AI — Taxi Call Group S.A.S. | Branco Blunda">
+<meta property="og:description" content="A taxi company was dispatching tens of thousands of calls a month by hand. I built the AI that answers the phone, understands the passenger's spoken addr">
+<meta property="og:image" content="https://brancoblunda.com/assets/images/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Taxi AI — Taxi Call Group S.A.S. | Branco Blunda">
+<meta name="twitter:description" content="A taxi company was dispatching tens of thousands of calls a month by hand. I built the AI that answers the phone, understands the passenger's spoken addr">
+<meta name="twitter:image" content="https://brancoblunda.com/assets/images/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/styles.css?v=80a3ce27">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CreativeWork","@id":"https://brancoblunda.com/proyectos/taxi-ai.html#caso","name":"Taxi AI","url":"https://brancoblunda.com/en/proyectos/taxi-ai.html","description":"A taxi company was dispatching tens of thousands of calls a month by hand. I built the AI that answers the phone, understands the passenger's spoken address and assigns the driver on its own, with no person involved. Also the two published mobile apps, the landing page and the operations panel.","image":"https://brancoblunda.com/assets/proyectos/taxi-ai/08-panel-despacho.webp","creator":{"@type":"Person","name":"Branco Blunda","url":"https://brancoblunda.com/"},"about":["Node.js","Fastify","tRPC","PostgreSQL","Kysely","Asterisk / FreePBX","Docker","Traefik","Whisper","TTS","Google Maps","Twilio"],"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://brancoblunda.com/"},{"@type":"ListItem","position":2,"name":"Projects","item":"https://brancoblunda.com/#portafolio"},{"@type":"ListItem","position":3,"name":"Taxi AI","item":"https://brancoblunda.com/en/proyectos/taxi-ai.html"}]}]}</script>
+<!--i18n--><link rel="alternate" hreflang="es" href="https://brancoblunda.com/proyectos/taxi-ai.html">
+<link rel="alternate" hreflang="en" href="https://brancoblunda.com/en/proyectos/taxi-ai.html">
+<link rel="alternate" hreflang="x-default" href="https://brancoblunda.com/proyectos/taxi-ai.html"><!--/i18n-->
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="fixed top-0 w-full bg-gray-900 bg-opacity-95 backdrop-blur-md z-50 border-b border-gray-800">
+  <div class="container mx-auto px-6 py-4">
+    <div class="flex justify-between items-center">
+      <a href="../index.html" class="brand" aria-label="Branco Blunda — home">
+        <img src="../../assets/images/logo-dark.svg" alt="Branco Blunda" class="brand-logo" width="178" height="225">
+      </a>
+      <div class="hidden md:flex space-x-8">
+        <a href="../index.html#portafolio" class="nav-link">Projects</a>
+        <a href="../index.html#servicios" class="nav-link">What I do</a>
+        <a href="../index.html#opiniones" class="nav-link">Reviews</a>
+        <a href="../index.html#contacto" class="nav-link nav-cta">Tell me about your project</a>
+      </div>
+      <!--sw--><a href="/proyectos/taxi-ai.html" class="lang-switch" hreflang="es" lang="es" onclick="try{localStorage.setItem('lang','es')}catch(e){}" aria-label="Versión en español">ES</a><!--/sw--><button id="menu-toggle" class="md:hidden text-2xl focus:outline-none" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><i class="fas fa-bars"></i></button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-4">
+      <a href="../index.html#portafolio" class="block nav-link-mobile">Projects</a>
+      <a href="../index.html#servicios" class="block nav-link-mobile">What I do</a>
+      <a href="../index.html#opiniones" class="block nav-link-mobile">Reviews</a>
+      <a href="../index.html#contacto" class="block nav-link-mobile">Tell me about your project</a>
+    </div>
+  </div>
+</nav>
+<main id="main">
+<section class="case-hero px-6">
+  <div class="container mx-auto max-w-5xl">
+    <a href="../index.html#portafolio" class="volver"><i class="fas fa-arrow-left mr-2"></i>All projects</a>
+    <span class="case-tag">AI voice agent · Telephony</span>
+    <h1 class="case-title"><span class="gradient-text">Taxi AI</span></h1>
+    <p class="case-lede">A taxi company was dispatching tens of thousands of calls a month by hand. I built the AI that answers the phone, understands the passenger's spoken address and assigns the driver on its own, with no person involved. Also the two published mobile apps, the landing page and the operations panel.</p>
+    <ul class="case-meta">
+      <li><span>Client</span><b>Taxi Call Group S.A.S.</b></li>
+      <li><span>Country</span><b>Colombia</b></li>
+      <li><span>Role</span><b>Design, build and operation</b></li>
+      <li><span>Status</span><b>In production · ongoing maintenance</b></li>
+    </ul>
+    <ul class="case-kpis"><li><b>500+</b><span>drivers</span></li><li><b>50,000+</b><span>calls per month</span></li><li><b>35,000+</b><span>bookings per month</span></li><li><b>~70%</b><span>less manual work</span></li></ul><p class="case-nota">Operating figures are data reported by the client.</p>
+  </div>
+</section>
+
+<section class="px-6 pb-6">
+  <div class="container mx-auto max-w-6xl">
+    <div class="carousel" data-carousel aria-roledescription="carrusel" aria-label="Taxi AI screenshots">
+      <div class="carousel-stage">
+        <figure class="carousel-slide is-active" data-i="0">
+          <img src="../../assets/proyectos/taxi-ai/08-panel-despacho.webp" alt="Dispatch panel with the day's calls and rides, active requests, the fleet on the map and details of the ride in progress." class="" width="1536" height="1024" loading="lazy" decoding="async" data-zoom="1" data-file="assets/proyectos/taxi-ai/08-panel-despacho.webp" onerror="this.parentElement.classList.add('img-missing');this.parentElement.setAttribute('data-missing',this.dataset.file);this.remove()">
+        </figure><figure class="carousel-slide" data-i="1">
+          <img src="../../assets/proyectos/taxi-ai/01-landing-hero.webp" alt="The service's public landing page." class="" width="1600" height="860" loading="lazy" decoding="async" data-zoom="1" data-file="assets/proyectos/taxi-ai/01-landing-hero.webp" onerror="this.parentElement.classList.add('img-missing');this.parentElement.setAttribute('data-missing',this.dataset.file);this.remove()">
+        </figure><figure class="carousel-slide" data-i="2">
+          <img src="../../assets/proyectos/taxi-ai/02-landing-tres-formas.webp" alt="The three ways to order, by WhatsApp, by phone and from the app." class="" width="1600" height="860" loading="lazy" decoding="async" data-zoom="1" data-file="assets/proyectos/taxi-ai/02-landing-tres-formas.webp" onerror="this.parentElement.classList.add('img-missing');this.parentElement.setAttribute('data-missing',this.dataset.file);this.remove()">
+        </figure><figure class="carousel-slide" data-i="3">
+          <img src="../../assets/proyectos/taxi-ai/06-app-seguimiento.webp" alt="Real-time ride tracking, with the route and chat with the driver." class="" width="852" height="1846" loading="lazy" decoding="async" data-zoom="1" data-file="assets/proyectos/taxi-ai/06-app-seguimiento.webp" onerror="this.parentElement.classList.add('img-missing');this.parentElement.setAttribute('data-missing',this.dataset.file);this.remove()">
+        </figure><figure class="carousel-slide" data-i="4">
+          <img src="../../assets/proyectos/taxi-ai/05-app-solicitar.webp" alt="Ordering from the app. The circle is the driver search radius at peak hours." class="" width="664" height="1440" loading="lazy" decoding="async" data-zoom="1" data-file="assets/proyectos/taxi-ai/05-app-solicitar.webp" onerror="this.parentElement.classList.add('img-missing');this.parentElement.setAttribute('data-missing',this.dataset.file);this.remove()">
+        </figure><figure class="carousel-slide" data-i="5">
+          <img src="../../assets/proyectos/taxi-ai/07-app-historial.webp" alt="The passenger's ride history, with each ride's status." class="" width="681" height="1440" loading="lazy" decoding="async" data-zoom="1" data-file="assets/proyectos/taxi-ai/07-app-historial.webp" onerror="this.parentElement.classList.add('img-missing');this.parentElement.setAttribute('data-missing',this.dataset.file);this.remove()">
+        </figure><figure class="carousel-slide" data-i="6">
+          <img src="../../assets/proyectos/taxi-ai/03-play-pasajero.webp" alt="The passenger app, published on Google Play." class="" width="610" height="1356" loading="lazy" decoding="async" data-zoom="1" data-file="assets/proyectos/taxi-ai/03-play-pasajero.webp" onerror="this.parentElement.classList.add('img-missing');this.parentElement.setAttribute('data-missing',this.dataset.file);this.remove()">
+        </figure><figure class="carousel-slide" data-i="7">
+          <img src="../../assets/proyectos/taxi-ai/04-play-conductor.webp" alt="The driver app, published on Google Play." class="" width="610" height="1356" loading="lazy" decoding="async" data-zoom="1" data-file="assets/proyectos/taxi-ai/04-play-conductor.webp" onerror="this.parentElement.classList.add('img-missing');this.parentElement.setAttribute('data-missing',this.dataset.file);this.remove()">
+        </figure>
+        <button class="carousel-btn prev" type="button" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel-btn next" type="button" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+        <span class="carousel-count"><b>1</b> / 8</span>
+      </div>
+      <div class="carousel-caption">
+        <p class="carousel-cap is-active" data-i="0">Dispatch panel with the day's calls and rides, active requests, the fleet on the map and details of the ride in progress.</p><p class="carousel-cap" data-i="1">The service's public landing page.</p><p class="carousel-cap" data-i="2">The three ways to order, by WhatsApp, by phone and from the app.</p><p class="carousel-cap" data-i="3">Real-time ride tracking, with the route and chat with the driver.</p><p class="carousel-cap" data-i="4">Ordering from the app. The circle is the driver search radius at peak hours.</p><p class="carousel-cap" data-i="5">The passenger's ride history, with each ride's status.</p><p class="carousel-cap" data-i="6">The passenger app, published on Google Play.</p><p class="carousel-cap" data-i="7">The driver app, published on Google Play.</p>
+      </div>
+      <div class="carousel-dots" role="tablist"></div>
+    </div>
+    <p class="carousel-hint"><i class="fas fa-search-plus"></i> Tap a screenshot to see it full size</p>
+  </div>
+</section>
+
+<section class="py-12 px-6">
+  <div class="container mx-auto max-w-5xl">
+    <div class="case-split">
+      <div>
+        <h2 class="case-h2 text-green-400">The problem</h2>
+        <p class="case-p">The dispatch center got tens of thousands of calls a month, and each one was handled by a person who listened to the address, located it and radioed a driver. The bottleneck was human and it didn't scale.</p>
+        <div class="ba">
+          <div class="ba-antes"><span>Before</span><p>Each call was handled by a person who listened to the address, located it and radioed a driver.</p></div>
+          <div class="ba-flecha"><i class="fas fa-arrow-right"></i></div>
+          <div class="ba-despues"><span>After</span><p>The call answers itself, understands the spoken address and dispatches. The operator just watches.</p></div>
+        </div>
+      </div>
+      <div>
+        <h2 class="case-h2 text-blue-400">What I built</h2>
+        <ul class="case-list one"><li>Node.js endpoint that receives calls and audio from Asterisk.</li><li>Audio transcription with Whisper and address extraction with a language model.</li><li>Geocoding with Google Maps and a geofence around Manizales and Villamaría.</li><li>Spoken response generated with TTS and converted to telephone format with FFMPEG.</li><li class="more" hidden>Custom Asterisk dialplan for routing, driver lookups and direct transfer.</li><li class="more" hidden>Assignment within a variable radius of 500 to 1,900 meters depending on the time of day.</li><li class="more" hidden>Hang-up sensor that cancels the ride in the database automatically.</li><li class="more" hidden>Automatic sign-up for first-time callers.</li><li class="more" hidden>Two published Android apps, a passenger app with map tracking, driver chat and a security code, and a driver app.</li></ul>
+        <button class="ver-mas" type="button" data-more>See all 9 points <i class="fas fa-chevron-down"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-12 px-6 bg-gray-800 bg-opacity-50">
+  <div class="container mx-auto max-w-5xl">
+    <div class="case-tail">
+      <div>
+        <h2 class="case-h2 mb-5">What it's built with</h2>
+        <div class="flex flex-wrap gap-2"><span class="tech-badge sm c-back">Node.js</span><span class="tech-badge sm c-back">Fastify</span><span class="tech-badge sm c-back">tRPC</span><span class="tech-badge sm c-data">PostgreSQL</span><span class="tech-badge sm c-data">Kysely</span><span class="tech-badge sm c-ia">Asterisk / FreePBX</span><span class="tech-badge sm c-infra">Docker</span><span class="tech-badge sm c-infra">Traefik</span><span class="tech-badge sm c-ia">Whisper</span><span class="tech-badge sm c-ia">TTS</span><span class="tech-badge sm c-ia">Google Maps</span><span class="tech-badge sm c-ia">Twilio</span></div>
+      </div>
+      <aside class="live-card">
+        <h2 class="case-h2 mb-4">See it live</h2>
+        <div class="live-links"><div class="live-par"><a href="https://taxiai.com.co" target="_blank" rel="noopener" class="live-btn"><i class="fas fa-external-link-alt"></i>Website</a><a href="https://web.archive.org/web/2026/https://taxiai.com.co" target="_blank" rel="noopener" class="live-copia" title="Copy saved on the Wayback Machine"><i class="fas fa-box-archive"></i>copy</a></div><div class="live-par"><a href="https://play.google.com/store/apps/details?id=co.com.taxiai.pasajero" target="_blank" rel="noopener" class="live-btn"><i class="fas fa-external-link-alt"></i>Passenger app</a><a href="https://web.archive.org/web/2026/https://play.google.com/store/apps/details?id=co.com.taxiai.pasajero" target="_blank" rel="noopener" class="live-copia" title="Copy saved on the Wayback Machine"><i class="fas fa-box-archive"></i>copy</a></div><div class="live-par"><a href="https://play.google.com/store/apps/details?id=co.com.taxiai.conductor" target="_blank" rel="noopener" class="live-btn"><i class="fas fa-external-link-alt"></i>Driver app</a><a href="https://web.archive.org/web/2026/https://play.google.com/store/apps/details?id=co.com.taxiai.conductor" target="_blank" rel="noopener" class="live-copia" title="Copy saved on the Wayback Machine"><i class="fas fa-box-archive"></i>copy</a></div></div>
+        <p class="case-nota">If a link stops working, the archived copy shows what the system looked like.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="py-20 px-6 text-center">
+  <div class="container mx-auto max-w-3xl">
+    <h2 class="text-3xl font-bold mb-4">Working on something similar?</h2>
+    <p class="text-gray-400 mb-8">Tell me about the problem and let's talk it through.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="https://wa.me/5493417824155?text=Hola%20Branco,%20vi%20el%20caso%20de%20Taxi%20AI" target="_blank" rel="noopener" class="btn-primary"><i class="fab fa-whatsapp mr-2"></i>Message me</a>
+      <a href="../index.html#portafolio" class="btn-secondary"><i class="fas fa-arrow-left mr-2"></i>See other projects</a>
+    </div>
+  </div>
+</section>
+</main>
+<div class="read-progress" id="read-progress"></div>
+<footer class="py-12 px-6 bg-gray-800 bg-opacity-50 border-t border-gray-800">
+  <div class="container mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="text-center md:text-left">
+        <div class="flex items-center justify-center md:justify-start gap-3 mb-2">
+          <img src="../../assets/images/logo-dark.svg" alt="" class="brand-logo" width="178" height="225">
+          <span class="text-lg font-bold">Branco Blunda</span>
+        </div>
+        <p class="text-gray-500 text-sm">Software Engineer · AI Engineer · Rosario, Argentina</p>
+      </div>
+      <div class="flex gap-6">
+        <a href="https://github.com/BrancoBlunda" target="_blank" rel="noopener noreferrer" class="social-icon-footer" aria-label="GitHub"><i class="fab fa-github text-xl"></i></a>
+        <a href="https://linkedin.com/in/brancoblunda" target="_blank" rel="noopener noreferrer" class="social-icon-footer" aria-label="LinkedIn"><i class="fab fa-linkedin text-xl"></i></a>
+        <a href="https://www.workana.com/freelancer/a47899bad3b852d35ff4ca118b9b2d45" target="_blank" rel="noopener noreferrer" class="social-icon-footer" aria-label="Workana"><i class="fas fa-briefcase text-xl"></i></a>
+        <a href="https://wa.me/5493417824155" target="_blank" rel="noopener noreferrer" class="social-icon-footer" aria-label="WhatsApp"><i class="fab fa-whatsapp text-xl"></i></a>
+        <a href="mailto:brancoadrianblunda@gmail.com" class="social-icon-footer" aria-label="Email"><i class="fas fa-envelope text-xl"></i></a>
+      </div>
+      <div class="text-center md:text-right">
+        <p class="text-gray-500 text-sm">© <span id="current-year">2026</span> Branco Blunda</p>
+        <p class="text-gray-600 text-xs mt-1">Made with <i class="fas fa-heart text-red-500"></i> and a lot of code</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/5493417824155?text=Hola%20Branco,%20te%20escribo%20por%20un%20proyecto" target="_blank" rel="noopener" aria-label="Message me on WhatsApp">
+  <i class="fab fa-whatsapp"></i><span>Message me</span>
+</a>
+<button id="scroll-top" class="scroll-top-btn" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+<script src="../js/main.js?v=b8d4cdcf"></script>
+</body>
+</html>

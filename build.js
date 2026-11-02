@@ -366,7 +366,7 @@ ${depth?'<div class="read-progress" id="read-progress"></div>':''}
           <img src="${r}assets/images/logo-dark.svg" alt="" class="brand-logo" width="178" height="225">
           <span class="text-lg font-bold">Branco Blunda</span>
         </div>
-        <p class="text-gray-500 text-sm">Software Engineer · Rosario, Argentina</p>
+        <p class="text-gray-500 text-sm">Software Engineer · AI Engineer · Rosario, Argentina</p>
       </div>
       <div class="flex gap-6">
         <a href="${GITHUB}" target="_blank" rel="noopener noreferrer" class="social-icon-footer" aria-label="GitHub"><i class="fab fa-github text-xl"></i></a>
@@ -405,14 +405,14 @@ const SERVICIOS=[
 
 /* ---------- index ---------- */
 const LD_HOME={'@context':'https://schema.org','@graph':[
-{'@type':'Person','@id':SITE+'/#branco','name':'Branco Blunda','jobTitle':'Software Engineer',
+{'@type':'Person','@id':SITE+'/#branco','name':'Branco Blunda','jobTitle':'Software Engineer · AI Engineer',
  'url':SITE+'/','image':SITE+'/assets/images/foto.webp','email':'mailto:'+MAIL,'telephone':'+5493417824155',
  'address':{'@type':'PostalAddress','addressLocality':'Rosario','addressRegion':'Santa Fe','addressCountry':'AR'},
  'sameAs':[GITHUB,LINKEDIN,WORKANA],
  'worksFor':{'@type':'Organization','name':'RedChat','url':'https://redchat.com.ar'},
  'knowsAbout':['Inteligencia artificial','Agentes conversacionales','WhatsApp Business API','SaaS multi-tenant','Node.js','Python','TypeScript','React','Next.js','NestJS','Flutter','PostgreSQL','AWS','Terraform'],
  'knowsLanguage':['es','en']},
-{'@type':'WebSite','@id':SITE+'/#web','url':SITE+'/','name':'Branco Blunda — Software Engineer',
+{'@type':'WebSite','@id':SITE+'/#web','url':SITE+'/','name':'Branco Blunda — Software Engineer · AI Engineer',
  'inLanguage':'es-AR','publisher':{'@id':SITE+'/#branco'}},
 {'@type':'ProfessionalService','@id':SITE+'/#servicio','name':'Branco Blunda — Desarrollo de software a medida',
  'url':SITE+'/','image':SITE+'/assets/images/og.png','priceRange':'$$','telephone':'+5493417824155',
@@ -424,8 +424,8 @@ const LD_HOME={'@context':'https://schema.org','@graph':[
 {'@type':'ItemList','name':'Proyectos','itemListElement':PROJECTS.map((pr,i)=>({'@type':'ListItem','position':i+1,'url':SITE+'/proyectos/'+pr.slug+'.html','name':pr.title}))}
 ]};
 
-let idx=head('Branco Blunda | Software Engineer — Agentes de IA, SaaS y apps a medida',
- 'Software Engineer en Rosario. Construyo agentes de voz y de WhatsApp con IA, SaaS multi-empresa y apps publicadas. 55+ proyectos entregados, 30+ reseñas de clientes.',
+let idx=head('Branco Blunda | Software Engineer · AI Engineer',
+ 'Software Engineer y AI Engineer en Rosario. Construyo agentes de voz y de WhatsApp con IA, SaaS multi-empresa y apps publicadas. 55+ proyectos entregados, 30+ reseñas de clientes.',
  SITE+'/',0,LD_HOME);
 
 idx+=`
@@ -437,13 +437,9 @@ idx+=`
           <span class="px-4 py-2 bg-green-500 bg-opacity-10 border border-green-500 rounded-full text-green-400 text-sm font-mono">🚀 Disponible para proyectos</span>
         </div>
         <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight"><span class="gradient-text">Branco </span>Blunda</h1>
-        <h2 class="text-2xl md:text-3xl text-gray-300 mb-6 font-light">Software Engineer · Full Stack &amp; IA</h2>
-        <p class="text-lg md:text-xl text-gray-400 mb-4 max-w-2xl">
-          Construyo <span class="text-green-400 font-semibold">software a medida</span> para empresas y emprendedores que quieren
-          bajar costos, automatizar procesos y meterle <span class="text-blue-400 font-semibold">IA</span> a lo que hoy hacen a mano.
-        </p>
-        <p class="text-gray-400 mb-4 max-w-2xl">Agentes de voz y de WhatsApp, SaaS multi-empresa y apps publicadas. Todo en producción, usado por gente real.</p>
-        <p class="text-gray-500 mb-8 max-w-2xl">Hoy soy Software Engineer en RedChat, una plataforma de IA para ecommerce. Desarrollo software desde 2017 · Rosario, Argentina · Trabajo remoto.</p>
+        <h2 class="text-2xl md:text-3xl text-gray-300 mb-6 font-light">Software Engineer · AI Engineer</h2>
+        <p class="text-lg md:text-xl text-gray-400 mb-3 max-w-2xl">Construyo <span class="text-green-400 font-semibold">software a medida</span> y <span class="text-blue-400 font-semibold">agentes de IA</span> que ya usan miles de personas.</p>
+        <p class="text-gray-500 mb-8 max-w-2xl">Hoy en RedChat, IA para ecommerce · Rosario, Argentina</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
           <a href="#portafolio" class="btn-primary"><i class="fas fa-folder-open mr-2"></i>Ver lo que construí</a>
           <a href="${WA}?text=Hola%20Branco,%20te%20escribo%20por%20un%20proyecto" target="_blank" rel="noopener" class="btn-secondary"><i class="fab fa-whatsapp mr-2"></i>Contame tu proyecto</a>
@@ -459,7 +455,7 @@ idx+=`
       </div>
       <div class="hero-foto">
         <div class="profile-container">
-          <img src="assets/images/foto.webp" alt="Branco Blunda - Software Engineer" class="profile-image" loading="eager" width="800" height="800">
+          <img src="assets/images/foto.webp" alt="Branco Blunda - Software Engineer · AI Engineer" class="profile-image" loading="eager" width="800" height="800">
           <div class="profile-glow"></div>
         </div>
       </div>
@@ -814,3 +810,4 @@ simple('Página no encontrada',`
 console.log('  + sitemap.xml, robots.txt, gracias.html, 404.html');
 
 console.log('OK — index.html + '+PROJECTS.length+' paginas de caso');
+require('./make-en.js');
